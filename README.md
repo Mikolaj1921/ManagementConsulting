@@ -1,19 +1,19 @@
-# My Project
+# Management Consulting
 
-**My Project** - это веб-приложение, которое предоставляет юридическую, административную и консалтинговую поддержку для клиентов. Проект включает функциональность для управления данными клиентов, документацией, а также возможности для общения с пользователями и поддержки.
+**Management Consulting** - to aplikacja internetowa, która oferuje usługi prawne, administracyjne i doradcze dla klientów. Projekt zawiera funkcjonalności do zarządzania danymi klientów, dokumentacją, a także możliwości komunikacji z użytkownikami i wsparcia.
 
-## Структура проекта
+## Struktura projektu
 
-Проект состоит из двух основных частей:
+Projekt składa się z dwóch głównych części:
 
-- **frontend** - Фронтенд, разработанный с использованием React.
-- **backend** - Бэкенд, созданный на Node.js с использованием Express для обработки API-запросов и работы с базой данных.
+- **frontend** - Frontend, stworzony przy użyciu React.
+- **backend** - Backend, stworzony w Node.js z użyciem Express do obsługi zapytań API i pracy z bazą danych.
 
-## Как запустить проект
+## Jak uruchomić projekt
 
-### 1. Клонировать репозиторий
+### 1. Sklonuj repozytorium
 
-Сначала клонируйте репозиторий:
+Najpierw sklonuj repozytorium:
 
 ```bash
 git clone https://github.com/username/my-project.git
