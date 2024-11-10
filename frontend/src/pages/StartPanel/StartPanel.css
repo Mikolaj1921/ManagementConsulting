@@ -1,0 +1,59 @@
+/* Resetowanie marginesów, paddingów i ustawienie box-sizing dla wszystkich elementów */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Ustawienie body i html na 100% wysokości i szerokości */
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Styl panelu */
+  .start-panel {
+    font-family: Arial, sans-serif;
+    padding: 10px /* Możesz dostosować to, jeśli chcesz mieć padding w głównym panelu */
+  }
+  
+  /* Nagłówek */
+  header {
+    width: 100%;          /* Cała szerokość ekranu */
+    background-color: #333;
+    color: white;
+    padding: 20px;        /* Padding wewnątrz nagłówka */
+  }
+  
+  /* Stylizacja nawigacji */
+  header nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  header nav ul li {
+    display: inline;
+    margin-right: 15px;
+  }
+  
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Główna sekcja - treść */
+  main {
+    margin-top: 20px;   /* Możesz zmienić, aby usunąć lub dostosować */
+  }
+  
+  /* Stopka */
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
