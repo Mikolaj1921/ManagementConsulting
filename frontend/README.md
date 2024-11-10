@@ -1,3 +1,5 @@
+# Struktura front-endu
+
 project-root/
 
 
