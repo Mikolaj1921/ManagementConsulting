@@ -1,0 +1,46 @@
+header {
+    display: flex;               /* Flexbox do układania elementów */
+    justify-content: space-between; /* Rozstawia logo po lewej, linki po prawej */
+    align-items: center;         /* Wyrównuje wszystkie elementy w pionie */
+    padding: 10px 20px;          /* Odstępy wokół nagłówka */
+    background-color: #2a2a2a;      /* Kolor tła nagłówka */
+  }
+  
+
+
+  .logo-container {
+    flex: 0 0 auto;              /* Logo nie rośnie ani nie kurczy się */
+    align-items: flex-start; /* Wyrównanie elementów do górnej krawędzi */
+    padding-top: 6px;
+  }
+  
+  .logo {
+    width: 100px;                /* Ustawiamy szerokość logo na 100px */
+    height: auto;                /* Zachowujemy proporcje obrazu */
+  }
+  
+
+
+  nav ul {
+    display: flex;               /* Rozstawiamy linki w poziomie */
+    list-style-type: none;        /* Usuwamy domyślne kropki */
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin-left: 20px;            /* Odstęp między linkami */
+  }
+  
+  nav ul li a {
+    text-decoration: none;        /* Usuwamy podkreślenie linków */
+    color: #333;                  /* Kolor linków */
+    font-size: 16px;              /* Rozmiar czcionki */
+  }
+  
+  nav ul li a:hover {
+    color: #007BFF;               /* Zmiana koloru linku przy najechaniu */
+  }
+  
+
+  

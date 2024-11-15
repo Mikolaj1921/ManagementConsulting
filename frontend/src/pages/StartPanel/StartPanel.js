@@ -1,21 +1,10 @@
+// StartPanel.jsx
 import React from 'react';
 import './StartPanel.css'; // Możesz dodać własne style
 
 function StartPanel() {
   return (
     <div className="start-panel">
-      {/* Nagłówek panelu */}
-      <header>
-        <h1>Witamy na stronie firmy!</h1>
-        <nav>
-          <ul>
-            <li><a href="#about">O nas</a></li>
-            <li><a href="#services">Usługi</a></li>
-            <li><a href="#contact">Kontakt</a></li>
-          </ul>
-        </nav>
-      </header>
-
       {/* Główna sekcja - treść */}
       <main>
         <section id="about">
@@ -32,10 +21,6 @@ function StartPanel() {
         </section>
       </main>
 
-      {/* Stopka panelu */}
-      <footer>
-        <p>&copy; 2024 Firma ManagementConsulting. Wszystkie prawa zastrzeżone.</p>
-      </footer>
     </div>
   );
 }

@@ -1,0 +1,168 @@
+/* Ogólny kontener sekcji "O nas" */
+.about-us-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Sekcja główna (cały kontener) */
+  .about-us-section {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  
+  /* Nagłówek sekcji "O nas" */
+  .about-us-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Opis firmy - ogólny tekst */
+  .about-us-description {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    text-align: justify;
+  }
+  
+  /* Sekcja kontaktowa */
+  .about-us-contact {
+    font-size: 1.1rem;
+    color: #555;
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  /* Link do kontaktu */
+  .contact-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .contact-link:hover {
+    color: #0056b3;
+  }
+  
+  /* Sekcja głównej dyrektor - informacje o dyrektorze */
+  .about-us-director {
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  /* Tytuł sekcji dyrektora */
+  .director-title {
+    font-size: 1.6rem;
+    color: #333;
+  }
+  
+  /* Imię i nazwisko dyrektora */
+  .director-name {
+    font-size: 1.2rem;
+    color: #555;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  
+  /* Sekcja "Zakres podstawowych usług" */
+  .about-us-service {
+    margin-bottom: 30px;
+  }
+  
+  /* Tytuł sekcji usług */
+  .service-title {
+    font-size: 1.6rem;
+    color: #333;
+    margin-bottom: 15px;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+  }
+  
+  /* Lista usług */
+  .service-list {
+    list-style: none; /* Usuwamy domyślne kropki */
+    padding-left: 0;
+  }
+  
+  .service-list li {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+    padding-left: 25px; /* Dodajemy przestrzeń na kropkę */
+    position: relative; /* Pozwala na pozycjonowanie niestandardowych elementów */
+    margin-bottom: 10px;
+  }
+  
+  /* Niestandardowa kropka dodana przez klasę "custom-dot" */
+  .custom-dot::before {
+    content: '\2022'; /* Kod Unicode dla kropki */
+    font-size: 2rem; /* Zwiększa rozmiar kropki */
+    color: #000000; /* Kolor kropki */
+    position: absolute; /* Pozycjonowanie kropki */
+    left: 0; /* Wyrównanie do lewej krawędzi */
+    top: 50%; /* Wyrównanie pionowe */
+    transform: translateY(-50%); /* Centruje kropkę */
+  }
+  
+  /* Niestandardowa kropka dodana przez klasę "custom-dot" */
+.service-list li::before {
+    content: '\2022'; /* Kod Unicode dla kropki */
+    font-size: 2rem; /* Zwiększa rozmiar kropki */
+    color: #000000; /* Kolor kropki */
+    position: absolute; /* Pozycjonowanie kropki */
+    left: 0; /* Wyrównanie do lewej krawędzi */
+    top: 50%; /* Wyrównanie pionowe */
+    transform: translateY(-50%); /* Centruje kropkę */
+  }
+  /* Responsywność */
+  @media (max-width: 768px) {
+    /* Zmniejszenie paddingu w kontenerze */
+    .about-us-container {
+      padding: 20px;
+    }
+  
+    /* Zmniejszenie rozmiaru nagłówka */
+    .about-us-title {
+      font-size: 2rem;
+    }
+  
+    /* Zmniejszenie rozmiaru opisu */
+    .about-us-description {
+      font-size: 1rem;
+    }
+  
+    /* Zmniejszenie rozmiaru tytułu sekcji usług */
+    .service-title {
+      font-size: 1.4rem;
+    }
+  
+    /* Zmniejszenie rozmiaru tekstu listy usług */
+    .service-list li {
+      font-size: 1rem;
+    }
+  
+    /* Zmniejszenie rozmiaru tekstu w sekcji kontaktu */
+    .about-us-contact {
+      font-size: 1rem;
+    }
+  
+    /* Zmniejszenie rozmiaru tytułu sekcji dyrektora */
+    .director-title {
+      font-size: 1.4rem;
+    }
+  
+    /* Zmniejszenie rozmiaru imienia i nazwiska dyrektora */
+    .director-name {
+      font-size: 1.1rem;
+    }
+  }
+  

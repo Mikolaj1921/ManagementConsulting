@@ -2,13 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import StartPanel from './StartPanel';
+//import StartPanel from './pages/StartPanel/StartPanel';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root')); // Miejsce w DOM, gdzie renderowana jest aplikacja
 root.render(
   <React.StrictMode>
-    <StartPanel />
+    <App/>
   </React.StrictMode>
 );
 

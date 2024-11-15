@@ -1,0 +1,170 @@
+/* Kontener */
+.container {
+  display: flex;
+  gap: 40px;                /* Zwiększony odstęp między kolumnami */
+  flex-wrap: wrap;           /* Dla responsywności */
+  justify-content: space-between;
+}
+
+/* Sekcja formularza */
+.form-section, .contact-section {
+  flex: 1;                  /* Obie sekcje zajmują równą przestrzeń */
+  min-width: 300px;         /* Minimalna szerokość sekcji */
+}
+
+/* Formularz */
+.form-section {
+  background-color: #f9f9f9; /* Tło sekcji formularza */
+  padding: 30px;             /* Większe paddingi dla formularza */
+  border-radius: 10px;       /* Zaokrąglone rogi formularza */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Cień wokół formularza */
+  display: flex;
+  flex-direction: column;
+  gap: 25px;                 /* Zwiększenie odstępów między elementami */
+}
+
+.form-section h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+form label {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 5px;        /* Odstęp między etykietą a polem */
+}
+
+form input, form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;        /* Zaokrąglone rogi pól formularza */
+  font-size: 1rem;
+  color: #333;
+  width: 100%;               /* Szerokość 100% */
+  box-sizing: border-box;    /* Zapewnia, że padding nie wpływa na szerokość */
+}
+
+form input:focus, form textarea:focus {
+  outline: none;
+  border-color: #007bff;     /* Kolor obramowania przy focuse */
+}
+
+form textarea {
+  height: 150px;             /* Wysokość pola tekstowego */
+  resize: vertical;          /* Pozwoli na zmianę rozmiaru w pionie */
+}
+
+form button {
+  padding: 12px 20px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #0056b3; /* Zmiana koloru przy najechaniu */
+}
+
+form button:focus {
+  outline: none;
+}
+
+
+
+
+
+/* Sekcja kontaktowa */
+.contact-section {
+  background-color: #f8f8f8; /* Jaśniejsze tło */
+  padding: 30px;             /* Większe paddingi */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Cień wokół sekcji */
+  max-width: 600px;          /* Maksymalna szerokość sekcji */
+  margin: 0 auto;            /* Wyśrodkowanie sekcji */
+  display: flex;
+  flex-direction: column;
+  gap: 25px;                 /* Zwiększenie odstępów między elementami */
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contact-item {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 20px;       /* Zwiększenie odstępu między informacjami */
+}
+
+.contact-item strong {
+  font-weight: bold;
+  color: #333; /* Kolor nagłówków */
+}
+
+.contact-item a {
+  color: #007bff; /* Kolor linku */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+  color: #0056b3; /* Kolor po najechaniu na link */
+}
+
+.contact-item a:focus {
+  outline: none;
+  color: #0056b3;
+}
+
+/* Mapa */
+.map {
+  width: 100%;
+  height: 400px; 
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Zmiana układu na kolumnowy na mniejszych ekranach */
+    gap: 40px;              /* Zwiększenie odstępów między sekcjami */
+  }
+
+  .form-section, .contact-section {
+    max-width: 100%;        /* Sekcje zajmują pełną szerokość */
+    padding: 20px;
+  }
+
+  .form-section h2, .contact-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact-item {
+    font-size: 1rem;
+  }
+
+  form label, form input, form textarea, form button {
+    font-size: 1rem;
+  }
+
+  form textarea {
+    height: 130px;
+  }
+
+  form button {
+    font-size: 1rem;
+  }
+}
