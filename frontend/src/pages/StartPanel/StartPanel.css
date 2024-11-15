@@ -1,59 +1,182 @@
 /* Resetowanie marginesów, paddingów i ustawienie box-sizing dla wszystkich elementów */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ustawienie body i html na 100% wysokości i szerokości */
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif; /* Czcionka dla całego dokumentu */
+}
+
+/* Styl panelu */
+.start-panel {
+  padding: 0px; /* Padding w głównym panelu */
+}
+
+.service-list{
+  margin: 40px;
+}
+
+
+.hero-section {
+  position: relative; /* Relatywne pozycjonowanie, aby dzieci mogły się pozycjonować */
+  overflow: hidden; /* Ukrywa wszelkie nadmiarowe elementy */
+  width: 100%; /* Ustawienie pełnej szerokości sekcji */
+  height: 50vh; /* Wysokość sekcji na 100% wysokości okna */
+  margin: 0; /* Usunięcie marginesów */
+  padding: 0; /* Usunięcie paddingu */
+}
+
+/* Tło z efektem rozmycia */
+.hero-section .background {
+  position: absolute; /* Pozycjonowanie absolutne, aby tło było w tle */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('../../assets/images/strgltlo.jpg'); /* Ścieżka do obrazu tła */
+  background-size: cover;
+  background-position: center;
+  filter: blur(7px); /* Efekt rozmycia */
+  z-index: -1; /* Zapewnia, że tło jest za treścią */
+}
+
+/* Treść w sekcji Hero */
+.hero-section .content {
+  position: relative; /* Pozwala na pozycjonowanie treści względem sekcji */
+  text-align: center;
+  padding: 100px 20px;
+  color: white;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+/* Sekcja o nas */
+.about-section {
+  margin-top: 40px; /* Dodaje odstęp między sekcją o nas a górnym elementem */
+}
+
+
+/* Sekcja tytułów i sekcji */
+.section-title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Lista punktów */
+.service-list {
+  list-style: none;
+  padding-left: 0;
+  font-size: 1.1rem;
+}
+
+.service-list li {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.service-list li::before {
+  content: '\2022'; /* Kod Unicode dla kropki */
+  font-size: 1.5rem;
+  color: #007bff;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Sekcja Administratorzy */
+.admins-section {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.admin-details .admin {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+/* Sekcja kontaktu */
+.contact-section {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.contact-link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contact-link:hover {
+  color: #0056b3;
+}
+
+/* Sekcja "Dlaczego my?" */
+.why-us-section {
+  background-color: #f9f9f9;
+  padding: 40px;
+  margin-top: 30px;
+}
+
+.why-us-section .service-list li {
+  padding-left: 20px;
+}
+
+.why-us-section .service-list li::before {
+  content: '\2022';
+  color: #000000;
+}
+
+/* Sekcja "Dlaczego my?" */
+.additional-services-section {
+  background-color: #ffffff;
+  padding: 40px;
+  margin-top: 30px;
+}
+
+
+
+/* Responsywność */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
   }
-  
-  /* Ustawienie body i html na 100% wysokości i szerokości */
-  body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
+
+  .hero-subtitle {
+    font-size: 1.2rem;
   }
-  
-  /* Styl panelu */
-  .start-panel {
-    font-family: Arial, sans-serif;
-    padding: 10px /* Możesz dostosować to, jeśli chcesz mieć padding w głównym panelu */
+
+  .section-title {
+    font-size: 1.5rem;
   }
-  
-  /* Nagłówek */
+
+  .service-list li {
+    font-size: 1rem;
+  }
+
+  .admins-section .admin {
+    font-size: 1rem;
+  }
+
   header {
-    width: 100%;          /* Cała szerokość ekranu */
-    background-color: #333;
-    color: white;
-    padding: 20px;        /* Padding wewnątrz nagłówka */
-  }
-  
-  /* Stylizacja nawigacji */
-  header nav ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  header nav ul li {
-    display: inline;
-    margin-right: 15px;
-  }
-  
-  header nav ul li a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  /* Główna sekcja - treść */
-  main {
-    margin-top: 20px;   /* Możesz zmienić, aby usunąć lub dostosować */
-  }
-  
-  /* Stopka */
-  footer {
-    background-color: #333;
-    color: white;
     padding: 10px;
-    text-align: center;
-    margin-top: 20px;
   }
-  
+}

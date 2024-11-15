@@ -1,26 +1,69 @@
-// StartPanel.jsx
 import React from 'react';
+import logoImage from '../../assets/images/strgltlo.jpg';
 import './StartPanel.css'; // Możesz dodać własne style
+
 
 function StartPanel() {
   return (
     <div className="start-panel">
-      {/* Główna sekcja - treść */}
+      {/* Sekcja tła */}
+      <section className="hero-section">
+        <div className="background" style={{ backgroundImage: `url(${logoImage})` }}></div> {/* Tło z rozmyciem */}
+        <div className="content"> {/* Treść */}
+          <h1 className="hero-title">Management Consulting</h1>
+          <p className="hero-subtitle">Profesjonalne doradztwo i wsparcie w zakresie prawa i administracji.</p>
+        </div>
+      </section>
+
       <main>
-        <section id="about">
-          <h2>O nas</h2>
-          <p>Nasza firma oferuje profesjonalne wsparcie w zakresie prawa, konsultingu i administracji.</p>
+        {/* Sekcja o nas */}
+        <section id="about" className="about-section">
+          <h2 className="section-title">Zakres podstawowych usług, które świadczymy:</h2>
+          <ul className="service-list">
+            <li>Zezwolenie na pracę.</li>
+            <li>Pomoc dla firm zatrudniających cudzoziemców.</li>
+            <li>Pomoc w założeniu firmy.</li>
+            <li>Zezwolenie na pobyt czasowy i stały.</li>
+            <li>Obliczenie z PIT.</li>
+            <li>Wniosek o przydzielenie pracy.</li>
+          </ul>
         </section>
-        <section id="services">
-          <h2>Nasze usługi</h2>
-          <p>Świadczymy usługi doradcze, prawne i administracyjne dopasowane do potrzeb naszych klientów.</p>
+
+        {/* Sekcja Dlaczego my */}
+        <section id="why-us" className="why-us-section">
+          <h2 className="section-title">Dlaczego my?</h2>
+          <ul className="service-list">
+            <li>Doświadczenie.</li>
+            <li>Jakość.</li>
+            <li>Gwarancja.</li>
+            <li>Cena oraz wartość pracy.</li>
+          </ul>
         </section>
-        <section id="contact">
-          <h2>Kontakt</h2>
-          <p>Skontaktuj się z nami za pomocą formularza lub telefonicznie.</p>
+
+        {/* Sekcja dodatkowych usług */}
+        <section id="additional-services" className="additional-services-section">
+          <h2 className="section-title">Ogólne informacje o głównych i dodatkowych usługach:</h2>
+          <ul className="service-list">
+            <li>Personel i biuro.</li>
+            <li>Praca w Polsce.</li>
+            <li>Zezwolenie na pracę.</li>
+            <li>Pomoc dla firm zatrudniających cudzoziemców.</li>
+            <li>Pomoc w założeniu firmy.</li>
+            <li>Zezwolenie na pobyt czasowy i stały.</li>
+            <li>Obliczenie z PIT.</li>
+            <li>Wniosek o przydzielenie pracy.</li>
+            <li>Delegacja (pełen pakiet dokumentów).</li>
+            <li>Pomoc w zakresie uzyskania, przedłużenia i wymiany Karty Polaka.</li>
+            <li>A także wiele innych usług.</li>
+          </ul>
+        </section>
+
+        {/* Sekcja kontaktu */}
+        <section id="contact" className="contact-section">
+          <h2 className="section-title">Jak się z nami skontaktować?</h2>
+          <p>Kliknij tutaj, aby <a href="/contact" className="contact-link">zobaczyć kontakt</a>.</p>
         </section>
       </main>
-
     </div>
   );
 }

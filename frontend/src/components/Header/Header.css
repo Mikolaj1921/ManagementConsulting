@@ -6,40 +6,49 @@ header {
     background-color: #2a2a2a;      /* Kolor tła nagłówka */
   }
   
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+  }
 
+  header nav ul li {
+    display: inline;
+    margin-right: 15px;
+  }
 
   .logo-container {
-    flex: 0 0 auto;              /* Logo nie rośnie ani nie kurczy się */
+    flex: 0 0 auto;             
     align-items: flex-start; /* Wyrównanie elementów do górnej krawędzi */
     padding-top: 6px;
   }
   
   .logo {
-    width: 100px;                /* Ustawiamy szerokość logo na 100px */
-    height: auto;                /* Zachowujemy proporcje obrazu */
+    width: 100px;                
+    height: auto;                
   }
   
 
 
   nav ul {
-    display: flex;               /* Rozstawiamy linki w poziomie */
-    list-style-type: none;        /* Usuwamy domyślne kropki */
+    display: flex;               
+    list-style-type: none;        
     margin: 0;
     padding: 0;
   }
   
   nav ul li {
-    margin-left: 20px;            /* Odstęp między linkami */
+    margin-left: 20px;          
   }
   
   nav ul li a {
-    text-decoration: none;        /* Usuwamy podkreślenie linków */
-    color: #333;                  /* Kolor linków */
-    font-size: 16px;              /* Rozmiar czcionki */
+    text-decoration: none;       
+    color: #333;                  
+    font-size: 16px;              
   }
   
   nav ul li a:hover {
-    color: #007BFF;               /* Zmiana koloru linku przy najechaniu */
+    color: #8bc3ff;               
   }
   
 
